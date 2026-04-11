@@ -11,3 +11,14 @@
 
 ## III. Verification
 - **Cryptographic Attestation:** The system generates a unique signature proving that the MLP-10 Governor is active and un-tampered before a single token is generated.
+
+
+______
+
+
+### Remote Attestation Protocol:
+1. **The Handshake:** Before the user sees a single word, the TEE sends a **SHA-256 Hash** of the current Governor Logic to a decentralized ledger (or local secure chip).
+2. **The Verification:** If the Hash does not match the "Sovereign Standard," the TEE physically disables the power to the GPU/NPU cores processing the AI.
+3. **The Result:** You cannot "turn off" the security without turning off the AI.
+
+
