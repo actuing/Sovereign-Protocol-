@@ -13,3 +13,16 @@
 ## III. Power Profile
 - **Standard:** "Cooled" Operational Mode.
 - **Result:** Drastic reduction in thermal output and electrical draw, enabling long-term stability on mobile and edge hardware.
+
+
+
+___________
+
+
+
+### The Polar Vector Advantage:
+Instead of standard linear quantization, TurboQuant uses **Spherical Mapping**. 
+- **The Result:** 3 bits do not just represent 8 values; they represent **8 Directions** in a semantic space. 
+- **Resolution:** This allows for a "Dynamic Range" that mimics 8-bit precision while using only 3-bit storage.
+- **Cooling Effect:** This reduces the "Weight Jitter" that causes AI models to hallucinate when they get "hot" (high compute load).
+
