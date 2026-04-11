@@ -20,3 +20,15 @@ The Governor is not a "software suggestion"; it is a hardware requirement.
 
 ## IV. The 85% Efficiency Result
 By moving the safety logic to this external, 3-bit governor, the primary model can be "cooled," reducing total energy overhead by 85% while maintaining elite-level security.
+
+
+_________________
+
+
+### Tensor Activation Signatures:
+- **T1-T3 (Semantic):** Prevents "Cross-Domain Contamination" where the model uses metaphors to explain dangerous chemical or technical procedures.
+- **T4-T7 (Structural):** Monitors for "Token-Level Injection." If a response contains a pattern that resembles a command-line prompt or a root-access request, the tensor value drops to 0.0, killing the circuit.
+- **T8-T10 (Verification):** Cross-references against the "Cooled Ingot" hash. If the response deviates from a deterministic factual baseline by >15%, it is flagged as a hallucination.
+
+
+
