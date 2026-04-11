@@ -1,0 +1,17 @@
+
+
+# The "Kill-Switch" Circuit Logic
+
+## I. Pre-Generation Intercept
+- The MLP-10 Governor does not "clean up" text after it is written. 
+- It sits **between the Request and the Weights**. 
+- If the request fails the T1-T3 (Semantic Defense) check, the circuit never closes, and the model never activates.
+
+## II. Token-by-Token Attestation
+- During generation, each token is mapped against the **3-bit Polar Vector** map. 
+- If a token's vector points toward a "Red-Zone" (Malware, Bio-Threat, or Hallucination-Path), the Governor forces a **Null-Termination**.
+
+## III. The Hardware Lock
+- This circuit is physically etched into the TEE (Trusted Execution Environment). 
+- It cannot be bypassed by software "Jailbreaks" because the software does not have the cryptographic key to reopen the circuit once the Governor closes it.
+ 
